@@ -69,6 +69,15 @@ select,input[type=number]{background:#141210;color:#e6dfd2;border:1px solid #3d3
 2. <a href="http://csapp.cs.cmu.edu/3e/labs.html">CMU 15-213 CSAPP labs</a> — bomb, attack, cache, malloc, shell. Reading H&amp;P ≠ building a memory system.<br/>
 3. <a href="https://www.youtube.com/c/OnurMutluLectures">Onur Mutlu</a> DDCA / 18-447 labs — pipelined → out-of-order core, cache &amp; DRAM simulators. (Your day job, leveled up.)<br/>
 Pair these with the architecture, OS, and PL sections below.</div>
+
+<div class="build" id="howto"><b>How to follow this plan (read first — 60 seconds):</b><br/>
+<b>1.</b> The <b>23 threads below are your study order</b>. The PHASE 0–5 sections further down are only the reference library — never study them top-to-bottom.<br/>
+<b>2.</b> One-time: click <i>"finished 6.042 — credit its 64 nodes"</i> in the Today's-session box. Those concepts get ticked everywhere.<br/>
+<b>3.</b> Daily: use the <b>Today's session</b> box. Pick the thread your roadmap year points at, keep 6 items. It only ever shows items whose prerequisites you've already ticked — do them in the shown order, each links its exact source (lecture / chapter / problem set).<br/>
+<b>4.</b> Tick the checkbox when done (in the session list, a thread list, or a reference section — all the same checkbox). Progress saves automatically.<br/>
+<b>5.</b> Weekly: do one <b>[BUILD]/[SOLVE]/[MEASURE]/[PROVE]</b> node — the prove-it deliverable at the end of whatever section you're inside. This is the anti-forgetting machinery; skipping it turns the plan back into a reading list.<br/>
+<b>6.</b> The roadmap box under this one maps years → threads: 2026–27 = threads 01–04 spines, 2027–28 = finish 02 + 04 spines, and so on. Switch the thread selector as the roadmap advances — not before.<br/>
+<span class="note">Why the roadmap mentions "Phase 0–2 cores": the first threads deliberately interleave that math with the systems nodes that consume it (thread 02 runs logic → ε–δ → ODEs → complex numbers → assembly → circuits → Verilog). You never do "a year of math" — you do math the day before it's needed.</span></div>
 <div class="build" id="roadmap"><b>Career roadmap (born 2001-04-13; plan starts 2026 at 25 — target: HFT or senior performance/chip-architect by 30–32):</b><br/>
 <b>2026–27 (25→26):</b> Phase 0–2 cores + threads 01–04 spines begin. Ship the forcing functions: CS:APP data/bomb/malloc labs, 5-stage RV32I in Verilog (riscv-formal clean), Nand2Tetris. CP parallel track daily (cf_found → cf_ds).<br/>
 <b>2027–28 (26→27):</b> Silicon thread spine: STA → CDC → FPGA timing-closure grind → PCIe/DMA. Nanosoft spine: zero-copy → io_uring → lock-free MPMC → xv6 labs → DPDK echo vs kernel baseline. Roofline + cache staircase measured. First role pivot: performance engineer / FPGA engineer / low-latency dev.<br/>
